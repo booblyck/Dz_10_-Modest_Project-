@@ -1,0 +1,163 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-style: 600;
+}
+
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Quattrocento Sans', sans-serif; */
+
+.header-wrapper {
+  width: 100%;
+  min-width: 1124px;
+  height: 81px;
+  background: #1d2126;
+}
+
+.header {
+  margin: auto;
+  width: 1140px;
+  height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  background: url(../images/logo.svg);
+  display: block;
+  width: 99px;
+  height: 19px;
+}
+
+.nav ul {
+  width: 620px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav ul a {
+  font-size: 14px;
+  color: #a4aead;
+  padding: 8px 12px 8px 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  transition: 0.15s;
+}
+
+.nav ul a.active {
+  border: 2px solid #23b7a4;
+  color: #23b7a4;
+  border-radius: 5px;
+}
+
+.nav ul a.non-active:hover {
+  border: 2px solid #a4aead;
+  border-radius: 5px;
+}
+
+/* WELCOME BLOCK - WELCOME BLOCK - WELCOME BLOCK */
+
+main {
+  width: 100%;
+}
+
+.background-img {
+  width: 100%;
+  min-height: 660px;
+  /* display: block; */
+}
+
+.welcome {
+  position: relative;
+}
+
+.welcome-container {
+  position: absolute;
+  width: 610px;
+  top: calc(50% - 100px);
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-container h1 {
+  text-transform: uppercase;
+  font: 700 36px "Quattrocento Sans", sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.welcome-container strong {
+  display: block;
+  font: 400 14px "Open Sans", sans-serif;
+  color: #ccd0d7;
+  margin-bottom: 40px;
+}
+
+.links {
+  width: 259px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  display: flex;
+  height: 44px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  align-items: center;
+  transition: 0.2s;
+
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.links a:hover {
+  border-color: #23b7a4;
+  background: #23b7a4;
+}
+
+/* SPLIDE JS - SPLIDE JS - SPLIDE JS */
+
+.splide__arrow {
+  display: none;
+}
+
+.splide__pagination {
+  position: absolute;
+  justify-content: flex-end;
+  bottom: 50px;
+  right: 20%;
+}
+
+.splide__pagination li {
+  margin-right: 10px;
+}
+
+.splide__pagination__page {
+  z-index: 2;
+  background: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  bottom: 20%;
+  right: 20%;
+}
+
+.splide__pagination__page.is-active {
+  background: #fff;
+}
